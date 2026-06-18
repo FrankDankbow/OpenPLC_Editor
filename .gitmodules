@@ -1,6 +1,6 @@
 [submodule "editor"]
 	path = editor
-	url = https://github.com/thiagoralves/editor
+	url = https://github.com/FrankDankbow/editor
 [submodule "matiec"]
 	path = matiec
-	url = https://github.com/thiagoralves/matiec
+	url = https://github.com/FrankDankbow/matiec
