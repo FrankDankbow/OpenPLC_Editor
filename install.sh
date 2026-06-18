@@ -25,7 +25,7 @@ elif [ -x /usr/bin/apt-get ]; then
     sudo apt-get -qq update
     sudo apt-get install -y build-essential bison flex autoconf \
                           automake make git libgtk-3-dev\
-                          python3.9 python3.9-venv python3.9-dev
+                          python3.9 python3.12-venv python3.12-dev libsdl2-2.0-0
 #Installing dependencies for opensuse tumbleweed
 elif [ -x /usr/bin/zypper ]; then
     sudo zypper ref
@@ -56,8 +56,8 @@ if [ $(uname) == "FreeBSD" ]; then
 else
     python3.9 -m venv "$VENV_DIR"
     "$VENV_DIR/bin/python" -m pip install --upgrade pip
-    "$VENV_DIR/bin/python" -m pip install wheel jinja2 lxml==4.6.2 future matplotlib zeroconf pyserial pypubsub pyro5 attrdict3
-    "$VENV_DIR/bin/python" -m pip install wxPython==4.2.0
+    "$VENV_DIR/bin/python" -m pip install wheel jinja2 lxml future matplotlib zeroconf pyserial pypubsub pyro5 attrdict3
+    "$VENV_DIR/bin/python" -m pip install wxPython
 fi
 
 
