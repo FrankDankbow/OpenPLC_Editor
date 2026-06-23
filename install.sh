@@ -54,7 +54,7 @@ if [ $(uname) == "FreeBSD" ]; then
     "$VENV_DIR/bin/python" -m pip install --upgrade pip
     "$VENV_DIR/bin/python" -m pip install zeroconf pypubsub pyro5 attrdict3
 else
-    python3.9 -m venv "$VENV_DIR"
+    python3.12 -m venv "$VENV_DIR"
     "$VENV_DIR/bin/python" -m pip install --upgrade pip
     "$VENV_DIR/bin/python" -m pip install wheel jinja2 lxml future matplotlib zeroconf pyserial pypubsub pyro5 attrdict3
     "$VENV_DIR/bin/python" -m pip install wxPython
