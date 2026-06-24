@@ -57,7 +57,8 @@ else
     python3.12 -m venv "$VENV_DIR"
     "$VENV_DIR/bin/python" -m pip install --upgrade pip
     "$VENV_DIR/bin/python" -m pip install wheel jinja2 lxml future matplotlib zeroconf pyserial pypubsub pyro5 attrdict3
-    "$VENV_DIR/bin/python" -m pip install wxPython
+    "$VENV_DIR/bin/python" -m pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-24.04 wxPython
+    #"$VENV_DIR/bin/python" -m pip install wxPython
 fi
 
 
